@@ -1,11 +1,16 @@
-from transformers import AutoTokenizer
 import os
+
 from gptq_for_llama.llama_inference import load_quant
+from transformers import AutoTokenizer
 
 
 def load_4_bit(config):
     model_path = config.model_path
+    print('ts: model_path', model_path)
+    print('ts: os.path.exists(model_path)', os.path.exists(model_path))
+
     model_checkpoint = config.model_checkpoint
+    print('ts: model_checkpoint', model_checkpoint)
     if not model_path:
         if config.base_model_size == "13b":
             model_path = "vicuna-13B-1.1-GPTQ-4bit-128g"

@@ -23,7 +23,8 @@ class Config:
         self.use_fine_tuned_lora = False
         # self.lora_weights = os.getenv("LORA_WEIGHTS")
         self.device = "cpu"
-        self.model_path = "D:/lanquege_models/vicuna-13B-1.1-GPTQ-4bit-128g"
+        # self.model_path = "D:/lanquege_models/vicuna-13B-1.1-GPTQ-4bit-128g"
+        self.model_path = "/app/models/vicuna-13B-1.1-GPTQ-4bit-128g"
         self.model_checkpoint = "vicuna-13B-1.1-GPTQ-4bit-128g.safetensors"
 
     def __str__(self) -> str:
