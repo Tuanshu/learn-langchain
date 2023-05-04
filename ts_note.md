@@ -1,0 +1,1 @@
+uvicorn servers.vicuna_server:app

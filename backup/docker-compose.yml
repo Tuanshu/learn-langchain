@@ -1,0 +1,12 @@
+# docker-compose up --build
+
+version: '3.9'
+
+services:
+  learn_langchain_test:
+    build: .
+    image: learn_langchain_test
+    volumes:
+      - ./packages:/app/packages
+    ports:
+      - "8000:8000"
